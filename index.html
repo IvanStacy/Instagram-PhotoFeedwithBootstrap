@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta mane="viewport" content="width-divice-width, initial-scale-1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <title>Instagram</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+        <strong>Instagram</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        </ul>
+        <form class="d-flex" role="search">
+          <div class="col-10">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="col-12">
+                      <label for="Caption" class="form-label">Caption</label>
+                      <textarea class="form-control" id="Caption" rows="3"></textarea>
+                      <p class="card-text"><small class="text-body-secondary">Add the caption of your post here</small>
+                      </p>
+                    </div>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav">
+            <div class="dropdown" style="float: right;">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg viewBox="0 0 48 48" width="16" height="16; id=" Layer_2" data-name="Layer 2"
+                  xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path class="cls-1"
+                      d="M39.23,26a16.52,16.52,0,0,0,.14-2,16.52,16.52,0,0,0-.14-2l4.33-3.39a1,1,0,0,0,.25-1.31l-4.1-7.11a1,1,0,0,0-1.25-.44l-5.11,2.06a15.68,15.68,0,0,0-3.46-2l-.77-5.43a1,1,0,0,0-1-.86H19.9a1,1,0,0,0-1,.86l-.77,5.43a15.36,15.36,0,0,0-3.46,2L9.54,9.75a1,1,0,0,0-1.25.44L4.19,17.3a1,1,0,0,0,.25,1.31L8.76,22a16.66,16.66,0,0,0-.14,2,16.52,16.52,0,0,0,.14,2L4.44,29.39a1,1,0,0,0-.25,1.31l4.1,7.11a1,1,0,0,0,1.25.44l5.11-2.06a15.68,15.68,0,0,0,3.46,2l.77,5.43a1,1,0,0,0,1,.86h8.2a1,1,0,0,0,1-.86l.77-5.43a15.36,15.36,0,0,0,3.46-2l5.11,2.06a1,1,0,0,0,1.25-.44l4.1-7.11a1,1,0,0,0-.25-1.31ZM24,31.18A7.18,7.18,0,1,1,31.17,24,7.17,7.17,0,0,1,24,31.18Z">
+                    </path>
+                  </g>
+                </svg>
+                <ul class="dropdown-menu px-3 py-3">
+                  <li>Profile</li>
+                  <li>Accesibility</li>
+                  <li>Privacy &amp; Data</li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li style="color: red;">Log out</li>
+                </ul>
+            </div>
+            </button>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row-2 ">
+    <div class="top-icon">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg viewBox="0 0 24 24" width="25"
+            height="25" "xmlns=" http://www.w3.org/2000/svg" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M4.281 3h16.437A1.281 1.281 0 0 1 22 4.281v16.437A1.282 1.282 0 0 1 20.718 22H4.282A1.282 1.282 0 0 1 3 20.718V4.281A1.281 1.281 0 0 1 4.281 3z">
+              </path>
+              <path fill="none" d="M0 0h24v24H0z"></path>
+            </g>
+          </svg></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg fill="#000000" width="25"
+            height="25" "version=" 1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28.051 28.051" xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M25.351,0H2.698C1.446,0,0.434,1.004,0.434,2.232v23.59c0,1.23,1.012,2.229,2.264,2.229h22.653 c1.248,0,2.266-0.998,2.266-2.229V2.232C27.617,1.004,26.599,0,25.351,0z M8.662,26.373H4.053c-1.101,0-1.994-0.877-1.994-1.963 v-4.586h6.603C8.662,19.824,8.662,26.373,8.662,26.373z M8.662,17.527H2.059v-6.625h6.603C8.662,10.902,8.662,17.527,8.662,17.527z M8.662,8.605H2.059v-4.96c0-1.082,0.894-1.963,1.994-1.963h4.608v6.923H8.662z M17.582,26.373h-6.624v-6.549h6.624V26.373z M17.582,17.527h-6.624v-6.625h6.624V17.527z M17.582,8.605h-6.624V1.682h6.624V8.605z M25.989,24.41 c0,1.086-0.895,1.963-1.992,1.963H19.88v-6.549h6.109V24.41z M25.989,17.527H19.88v-6.625h6.109V17.527z M25.989,8.605H19.88V1.682 h4.117c1.098,0,1.992,0.881,1.992,1.963V8.605z">
+                </path>
+              </g>
+            </g>
+          </svg></button>
+      </li>
+    </ul>
+   </div>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        лента инстаграм
+        <div class="container">
+
+          <div class="card" style="width: 35rem; ">
+            <div class="line1 px-2 py-2">
+              <h4>My favorite picture in Paris</h4>
+            </div>
+            <div class="line2">
+              <img src="img/photo9 (1).jpeg" style="width: 200; height: 350;" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <strong>5713 Likes</strong>
+              <p class="card-text">I love winter, look how beautiful it is!</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 35rem; margin-top: 50px; ">
+            <div class="line1 px-2 py-2">
+              <h4>Nice place in Little Rock.</h4>
+            </div>
+            <div class="line2">
+              <img src="img/EA996250-1397-429B-AE48-EBA3690B303B_1_105_c.jpeg" width=150 height=550 class="card-img-top"
+                alt="...">
+            </div>
+            <div class="card-body">
+              <strong>9714 Likes</strong>
+              <p class="card-text">I advise everyone to visit this place, unforgettable emotions!!!</p>
+            </div>
+          </div>
+
+          <div class="card" style="width: 35rem; margin-top: 50px; ">
+            <div class="line1 px-2 py-2">
+              <h4>Made with love!</h4>
+            </div>
+            <div class="line2">
+              <img src="img/photo6 (1).avif" width=150 height=450 class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <strong>102948 Likes</strong>
+              <p class="card-text">Everything you do with love, always bring you good memories.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+        <div class="row">
+          <div class="col-4">
+            <img src="img/photo9 (1).jpeg" style="width: 350px; height:300px" />
+          </div>
+          <div class="col-4">
+            <img src="img/EA996250-1397-429B-AE48-EBA3690B303B_1_105_c.jpeg" style="width: 350px; height:300px" />
+          </div>
+          <div class="col-4">
+            <img src="img/photo6 (1).avif" style="width: 350px; height:300px" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="img/photo3 (1).jpeg" style="width: 350px; height:300px" />
+          </div>
+          <div class="col-4">
+            <img src="img/photo7 (1).jpeg" style="width: 350px; height:300px" />
+          </div>
+          <div class="col-4">
+            <img src="img/photo5 (1).jpeg" wight=300px; height=300px />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="img/photo8 (1).jpeg" wight=300px; height=300px />
+          </div>
+          <div class="col-4">
+            <img src="img/photo1.webp" wight=300px; height=300px />
+          </div>
+          <div class="col-4">
+            <img src="img/photo2.jpeg" wight=300px; height=300px />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+  </div>
+
+</body>
